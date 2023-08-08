@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
 
 
-      <div className="border flex w-1/6 h-screen flex-col bg-white drop-shadow-xl"> 
+      <div className="border flex w-1/6 h-screen flex-col bg-white shadow-md overflow-auto"> 
 
             <h1 className="flex border h-fit w-full font-medium text-base p-2 justify-start items-center">
             <img className="m-1" width="30" height="30" src="https://img.icons8.com/cute-clipart/64/a.png" alt="a"/>Amberpass

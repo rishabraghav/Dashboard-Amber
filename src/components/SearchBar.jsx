@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = () => {
     return (
-        <div className="flex w-full h-14 p-2 border shadow-md" >
+        <div className="flex w-full h-14 p-2 border bg-white" >
             <div className="flex items-center w-3/4 border rounded p-2 h-fit">
                 <button><img className="mr-2" width="25" height="25" src="https://img.icons8.com/tapes/40/experimental-search-tapes.png" alt="experimental-search-tapes" /></button>
                 <input className="font-light text-sm h-full items-center flex w-full border-white placeholder:text-xs focus:outline-none" placeholder="Type to search..." />
@@ -10,15 +10,15 @@ const SearchBar = () => {
 
             <div className="w-1/4 flex">
                 <div className="flex items-center w-1/2 h-fit">
-                    <button className="m-2 hover:bg-secondary active:opacity-75 h-full w-full flex justify-center items-center rounded-l">
+                    <button className="m-2 hover:bg-gray-100 outline-none active:opacity-75 h-full w-full flex justify-center items-center rounded-full">
                         <img className="m-1" width="20" height="20" src="https://img.icons8.com/ios/50/settings--v1.png" alt="settings--v1" />
                     </button>
 
-                    <button className="m-2 hover:bg-secondary active:opacity-75 h-full w-full flex justify-center items-center rounded-l">
+                    <button className="m-2 hover:bg-gray-100 outline-none active:opacity-75 h-full w-full flex justify-center items-center rounded-full">
                         <img className="m-1" width="20" height="20" src="https://img.icons8.com/ios/50/comments--v1.png" alt="comments--v1" />
                     </button>
 
-                    <button className="m-2 hover:bg-secondary active:opacity-75 h-full w-full flex justify-center items-center rounded-l">
+                    <button className="m-2 hover:bg-gray-100 outline-none active:opacity-75 h-full w-full flex justify-center items-center rounded-full">
                         <img className="m-1" width="20" height="20" src="https://img.icons8.com/ios/50/appointment-reminders--v1.png" alt="appointment-reminders--v1" />
                     </button>
                 </div>
