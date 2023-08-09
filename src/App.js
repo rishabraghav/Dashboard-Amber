@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://amber-dashboard.onrender.com/dashboard");
+        const response = await axios.get("https://amber-dashboard-backend.onrender.com/dashboard");
         console.log("fetched Data: ", response.data);
         setData(response.data);
         setLoading(false);
