@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.ag-cell {
+  width: fit-content !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 20px;
+}
+.ag-root-wrapper{
+  border: white !important;
+  outline: none !important;
+}
+.ag-row {
+  width: 100% !important;
+  display: flex !important;
+  border: white !important;
+}
+.ag-header-row{
+  background-color: white !important;
+}
+.ag-row-odd {
+  background-color: rgba(78, 78, 159, 0.043) !important;
+}
+.ag-header-cell{
+  width: fit-content !important;
+  font-size: 14px !important;
+  font-weight: 200 !important;
+  color: black !important;
+}
+.ag-center-cols-container{
+  height: fit-content !important;
+  /* width: fit-content !important; */
+}
+
+.ag-header-cell-label {
+  justify-content: center !important;
+}
