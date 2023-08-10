@@ -30,13 +30,13 @@ const AreaChart = ({ data }) => {
             title: "Date",
             gridlines: { color: 'transparent' },
             textPosition: 'none', // Remove horizontal axis labels
-            baseLineColor: "transparent",
+            baselineColor: 'transparent',
         },
         vAxis: {
             title: "Balance",
             gridlines: { color: 'transparent' },
             textPosition: 'none', // Remove horizontal axis labels
-            baseLineColor: "transparent",
+            baselineColor: 'transparent',
             minValue: 0,
         },
         isStacked: true,

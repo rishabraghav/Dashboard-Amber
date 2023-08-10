@@ -49,6 +49,7 @@ const ColumnChart = ({ data }) => {
           vAxis: {
             gridlines: { color: 'transparent' }, // Remove vertical gridlines
             textPosition: 'none', // Remove vertical axis labels
+            baselineColor: 'transparent',
           },
           legend: 'none',
           backgroundColor: "transparent",
