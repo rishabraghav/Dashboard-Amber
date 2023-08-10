@@ -72,3 +72,8 @@
 .ag-header-cell-label {
   justify-content: center !important;
 }
+
+rect{
+  /* visibility: hidden; */
+  /* height: 0; */
+}

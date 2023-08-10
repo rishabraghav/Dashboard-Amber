@@ -30,9 +30,14 @@ const Dashboard = ({ data, loading }) => {
         }
     }
     let total;
-
+    let totalUsersCount;
+    let newUsersCount;
+    let newUsersPercent;
     try{
         total = data.filter(element => element.status).reduce((total, element) => total + element.amount, 0);
+        totalUsersCount = data.length;
+        newUsersCount = data.filter(element => element.status === "Pending").length;
+        newUsersPercent = (newUsersCount / totalUsersCount) * 100;
     }catch(err) {
         console.error(err);
     }
@@ -45,7 +50,7 @@ const Dashboard = ({ data, loading }) => {
                         <TotalIncome total={total} loading={loading} />
                     </div>
                     <div className="h-1/2 w-full bg-white">
-                        <NewUser data={data} loading={loading} />
+                        <NewUser newUsersPercent={newUsersPercent} data={data} loading={loading} />
                     </div>
                 </div>
                 <div className="bg-white w-1/2 m-4">
@@ -54,9 +59,9 @@ const Dashboard = ({ data, loading }) => {
             </div>
 
 
-            <div className="bg-white h-1/2 m-2">
-                <div className="flex flex-col">
-                    <div className="flex justify-between p-3">
+            <div className="bg-white h-1/2 m-2 w-full">
+                <div className="flex flex-col w-full">
+                    <div className="flex justify-between p-3 w-full">
                         <p className="font-semibold">Recent Transactions</p>
                         <button onClick={handleDownload} className="flex items-center bg-primary text-white p-2 h-8 rounded-md text-[10px] font-light"><img className="mr-1" width="18" height="18" src="https://img.icons8.com/external-regular-kawalan-studio/24/FFFFFF/external-export-arrows-regular-kawalan-studio.png" alt="external-export-arrows-regular-kawalan-studio" />
                             Export</button>

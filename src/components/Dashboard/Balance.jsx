@@ -1,4 +1,5 @@
 import React from "react";
+import AreaChart from '../Extras/AreaChart';
 
 const Balance = ({ total, data, loading }) => {
     const initialBalance = 4100;
@@ -16,10 +17,10 @@ const Balance = ({ total, data, loading }) => {
     }
 
     return (
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full pb-0">
 
             {loading ? <p>Loading...</p> : (
-                <div className="h-full">
+                <div className="h-full pb-0">
 
                     <div className="flex flex-row justify-between items-center p-2 h-1/6">
                         <p className="p-3 text-lg font-semibold">Balance</p>
@@ -28,7 +29,7 @@ const Balance = ({ total, data, loading }) => {
 
                     <hr />
 
-                    <div className="flex flex-row justify-evenly">
+                    <div className="flex flex-row justify-evenly 2xl:flex-wrap">
                         <div className="flex flex-col border rounded p-2 px-4 m-4 w-full">
                             <p className="text-left text-[9px] font-light text-gray-500">Earnings</p>
                             <p className="font-bold text-2xl flex items-center">{earningsPercentage.toFixed(2)}%
@@ -43,8 +44,8 @@ const Balance = ({ total, data, loading }) => {
                         </div>
                     </div>
 
-                    <div>
-
+                    <div className="pb-0 m-0">
+                        <AreaChart data={data} />
                     </div>
 
                 </div>

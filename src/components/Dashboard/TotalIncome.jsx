@@ -1,4 +1,5 @@
 import React from "react";
+import BarChart from "../Extras/BarChart";
 
 const TotalIncome = ({ total, loading }) => {
 
@@ -14,6 +15,10 @@ const TotalIncome = ({ total, loading }) => {
                     <p className="font-bold text-3xl p-1 text-left flex items-center">₹{total}
                     <span className="text-[10px] border rounded-full text-white bg-green-500 font-normal flex items-center p-1 h-5 ml-1">+6.9%</span>
                     </p>
+                    <div className="mt-2">
+                        <BarChart total={total}/>
+                        <p className="text-left text-[9px] font-light text-gray-500">Yearly Goal</p>
+                    </div>
                 </div>
             )}
 
