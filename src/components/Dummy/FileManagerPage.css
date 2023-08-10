@@ -1,0 +1,53 @@
+/* FileManagerPage.css */
+.file-manager-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .file-manager-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .file-manager-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-manager-files {
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .file-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .file-details {
+    flex: 1;
+  }
+  
+  .file-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .file-size {
+    font-size: 14px;
+    color: #777;
+  }
+  
