@@ -24,6 +24,7 @@ const BarChart = ({ total }) => {
             gridlines: { color: 'transparent' },
             axisLineColor: "white"
         },
+        colors: ['#4E4FEB']
     };
 
     return (
