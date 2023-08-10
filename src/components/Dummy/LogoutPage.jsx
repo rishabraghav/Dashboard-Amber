@@ -9,7 +9,7 @@ const LogoutButton = () => {
   };
 
   return (
-    <div className="logout-container flex flex-col justify-center border bg-white w-3/4">
+    <div className="logout-container flex flex-col justify-center bg-white w-3/4">
       <h2 className="logout-title">Logout</h2>
       <p className="logout-text">
         Are you sure you want to logout? You will be redirected to the login page.
